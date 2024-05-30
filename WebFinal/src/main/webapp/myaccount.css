@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url("image/Apple-Health-study-July-2022-hero.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+/* Style the navigation bar */
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex; /* Add this to make it a flex container */
+}
+
+.menu-bar ul li {
+    flex-grow: 1; /* Make menu items grow to fill the space */
+}
+
+.menu-bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #111;
+}
+
+.menu-bar ul li.logout-right {
+    margin-left: auto; /* Push this item to the right */
+}
+
+/* Style the account info and password change sections */
+.account-info, .password-change {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+h2, h3 {
+    text-align: center; /* Centered headings */
+    color: #333;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form fields vertically */
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Style for the form button */
+form button {
+    padding: 5px 10px; /* Reduced padding for smaller size */
+    background-color: #0056b3; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: block; /* Block display to enable margin auto */
+    margin: 10px auto; /* Top and bottom margin 10px, auto horizontal margins for centering */
+    text-align: center; /* Center text inside the button */
+}
+
+form button:hover {
+    background-color: #004494; /* Darker color on hover */
+}
+
+/* Flex container for account sections */
+.account-sections {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space between the two sections */
+    margin-top: 20px; /* Margin at the top */
+}
+
+/* Style the account info and password change sections */
+.account-info, .password-change {
+    flex: 1; /* Each section takes up equal space */
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-right: 10px; /* Margin to the right of account-info */
+}
+
+/* Remove margin for the last item */
+.password-change {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-bar ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+    .menu-bar ul li {
+        width: 100%; /* Full width for each menu item */
+    }
+    .menu-bar ul li.logout-right {
+        margin-left: 0; /* Remove left margin */
+    }
+    .menu-bar ul li a {
+        padding: 10px; /* Increase padding */
+        font-size: 14px; /* Adjust font size */
+    }
+    
+    .account-sections {
+        flex-direction: column; /* Stack the sections vertically */
+    }
+    .account-info, .password-change {
+        margin-right: 0; /* Remove margin-right */
+        margin-bottom: 20px; /* Add some margin to the bottom */
+    }
+    form input, form button {
+        padding: 12px; /* Increase padding for touch friendliness */
+    }
+}

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url("image/Apple-Health-study-July-2022-hero.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+/* Style the navigation bar */
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex; /* Add this to make it a flex container */
+}
+
+.menu-bar ul li {
+    flex-grow: 1; /* Make menu items grow to fill the space */
+}
+
+.menu-bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #111;
+}
+
+.menu-bar ul li.logout-right {
+    margin-left: auto; /* Push this item to the right */
+}
+
+.welcome-message {
+    text-align: center; /* 텍스트를 중앙 정렬 */
+    font-size: 70px; /* 글자 크기 */
+    font-family: Century Gothic, sans-serif; /* 폰트 설정 */
+    margin: 250px 0; /* 위아래 여백 */
+    color: darkslateblue;
+    font-weight: 700;
+}
+
+.service-message {
+    /* 기존 코드 */
+    text-align: center;
+    margin-top: -200px;
+    font-size: 40px;
+    font-family: Century Gothic, sans-serif; 
+    color:darkslategray;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 5px;
+
+    /* 패딩 추가 */
+    padding: 20px;  /* 상하좌우 20px 패딩 적용 */
+}
+
+/* 화면 너비가 600px 미만일 때 적용될 스타일 */
+@media (max-width: 600px) {
+    .container {
+        width: 95%; /* Increase width to use more screen space */
+    }
+
+    .menu-bar ul li a {
+        padding: 10px 12px;  /* 패딩 크기 조정 */
+        font-size: 14px;  /* 폰트 크기 조정 */
+    }
+
+    .menu-bar ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    .welcome-message {
+        font-size: 40px; /* 폰트 크기 조정 */
+        margin: 150px 0; /* Adjust margin for smaller screens */
+    }
+
+    .service-message {
+        font-size: 25px; /* 폰트 크기 조정 */
+        margin-top: -150px; /* Adjust margin for smaller screens */
+    }
+}

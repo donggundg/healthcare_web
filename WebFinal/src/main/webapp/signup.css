@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #384047;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("image/Apple-Health-study-July-2022-hero.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.welcome-message {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 28px;
+      color: #4a4a4a; /* 글자 색상 */
+      font-weight: bold;
+      padding: 10px;
+      background-color: #f8f9fa; /* 배경 색상 */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    }
+    
+.container{
+    margin-top: -228px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 90px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+}
+
+.tab.active {
+    background-color: #fff;
+    border-top: 5px solid #2F558E; 
+    margin-top: -3px; 
+}
+
+.tab:not(.active):hover {
+    background-color: #e6e6e6;
+}
+
+.login-container {
+    background: #222;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 75px;
+    border-radius: 3px;
+    width: 400px;
+    height: 300px;
+    margin-top: 0px; 
+}
+
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #555;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #222;
+    color:white;
+}
+
+.login-button {
+    background-color: #2F558E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #005f73;
+}
+
+.signup-button {
+    background-color: #2F558E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-button:hover {
+    background-color: #005f73;
+}
+
+.error-message {
+    color: red;
+    
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.input-group input.error {
+    border-color: red;
+}
+
+.input-group input.valid {
+    border-color: green;
+}
+
+
+#checkMarkFirstName {
+    position: absolute;
+    right: 37%;
+    transform: translateY(-50%);
+    top: 38.2%;  
+}
+
+#checkMarkLastName {
+    position: absolute;
+    right: 37%;
+    transform: translateY(-50%);
+    top: 47.1%;
+}
+
+#checkMarkEmail{
+    position: absolute;
+    right: 37%;
+    transform: translateY(-50%);
+    top: 60%;
+}
+
+#checkMarkPassword{
+    position: absolute;
+    right: 37%;
+    transform: translateY(-50%);
+    top: 69%;
+}
+
+#checkMarkConfirmPassword{
+    position: absolute;
+    right: 37%;
+    transform: translateY(-50%);
+    top: 77.5%;
+}
+
+#checkMarkGender{
+    position: absolute;
+    right: 37%;
+    transform: translateY(-50%);
+    top: 52.5%;
+}
+
+#checkMarkLoginEmail{
+    position: absolute;
+    right: 37%;
+    transform: translateY(-50%);
+    top: 332px;
+}
+#checkMarkLoginPassword{
+    position: absolute;
+    right: 37%;
+    transform: translateY(-50%);
+    top: 407px;
+}
+.input-group.radio-group {
+    display: flex;
+    margin-left: 0px;
+  }
+  
+  .input-group.radio-group label {
+    margin-right: 120px; 
+}
+
+.error {
+    position: relative;
+  }
+  
+  .firstNameError {
+    margin-top: -124px;
+    border: solid #2F558E 1px;
+    background-color: #2F558E;
+    border-radius: 3px;
+    width: 193px;
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  
+  .lastNameError {
+    margin-top: -48px;
+    border: solid #2F558E 1px;
+    background-color: #2F558E;
+    border-radius: 3px;
+    width: 155px;
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  
+  .genderError {
+    margin-top: -0px;
+    border: solid #2F558E 1px;
+    background-color: #2F558E;
+    border-radius: 3px;
+    width: 143px;
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  
+  .emailError {
+    margin-top: 62px;
+    border: solid #2F558E 1px;
+    background-color: #2F558E;
+    border-radius: 3px;
+    width: 188px;
+    padding: 5px; 
+    margin-left: 5px;
+    text-align: center;
+  }
+  
+  .passwordError {
+    margin-top: 139px;
+    border: solid #2F558E 1px;
+    background-color: #2F558E;
+    border-radius: 3px;
+    width: 126px;
+    padding: 5px; 
+    margin-left: 5px;
+    text-align: center;
+  }
+  
+  .confirmError {
+    margin-top: 217px;
+    border: solid #2F558E 1px;
+    background-color: #2F558E;
+    border-radius: 3px;
+    width: 135px;
+    padding: 5px; 
+    margin-left: 5px;
+    text-align: center;
+  }
+
+  .loginEmailError{
+    margin-top: -120px;
+    border: solid #2F558E 1px;
+    background-color: #2F558E;
+    border-radius: 3px;
+    width: 190px;
+    margin-left: 5px;
+    padding: 5px;
+  }
+
+  .loginPasswordError{
+    margin-top: -45px;
+    border: solid #2F558E 1px;
+    background-color: #2F558E;
+    border-radius: 3px;
+    width: 155px;
+    padding: 5px;
+    margin-left: 5px;
+  }
+
+  .error-message {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 10px);
+  }
+
+  #signupName, #signupLast, #signupEmail, #signupPassword, #signupConfirm{
+    background-color: #222;
+    color:white;
+    border: solid 1.5px white;
+  }
+
+ #email,#password, #signupEmail:focus, #signupName:focus, #signupLast:focus, #signupPassword:focus, #signupConfirm:focus {
+    border-color: initial;
+    outline: none;
+}
+
+.loggedIn{
+    height: 20px;
+    margin-top: -200px;
+    
+}

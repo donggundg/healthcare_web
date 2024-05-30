@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url("image/Apple-Health-study-July-2022-hero.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+/* Style the navigation bar */
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex; /* Add this to make it a flex container */
+}
+
+.menu-bar ul li {
+    flex-grow: 1; /* Make menu items grow to fill the space */
+}
+
+.menu-bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #111;
+}
+
+.menu-bar ul li.logout-right {
+    margin-left: auto; /* Push this item to the right */
+}
+/* Style the table */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* No double borders */
+    margin-top: 20px; /* Space above the table */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f8f8f8; /* Slightly grey header */
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping for rows */
+}
+
+h2 {
+    text-align: center; /* Centered main heading */
+    color: #333;
+}
+
+h3 {
+    text-align: center; /* Centered subheading */
+    color: #555; /* Slightly lighter text */
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-bar ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+    .menu-bar ul li {
+        width: 100%; /* Full width for each menu item */
+    }
+    .menu-bar ul li.logout-right {
+        margin-left: 0; /* Remove left margin */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-bar ul li a {
+        padding: 10px; /* Increase padding */
+        font-size: 14px; /* Adjust font size */
+    }
+}
